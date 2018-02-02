@@ -15,7 +15,9 @@ export default class Header extends PureComponent {
     render () {
         return (
             <header>
-                <section className="logo"></section>
+                <section className="logo">
+                    <h1>EEEmoticon</h1>
+                </section>
                 <section className="main-menu">
                     <input type="text" placeholder="Search..."/>
                     <nav>
@@ -23,7 +25,7 @@ export default class Header extends PureComponent {
                         <Link to="/search">{t('search')}</Link>
                     </nav>
                     <section className="user">
-                        <img src="#" alt="avatar"/>
+                        <img src={require('../img/avatar.jpg')} alt="avatar"/>
                         <nav className="user-menu">
                             <a href="#">{t('home')}</a>
                             <a href="#">{t('home')}</a>

@@ -11,6 +11,8 @@ import {
 } from 'react-router-dom';
 import * as Routes from './Routes';
 
+import './style/index.scss';
+
 class App extends Component {
   render() {
     return (
