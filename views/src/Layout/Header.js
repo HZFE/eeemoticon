@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
+import t from '../utils/i18n';
 
-export class Header extends PureComponent {
+export default class Header extends PureComponent {
     constructor (props) {
         super(props);
         this.state = {};
@@ -12,18 +13,18 @@ export class Header extends PureComponent {
                 <section className="main-menu">
                     <input type="text" placeholder="Search..."/>
                     <nav>
-                        <a href="#">Menu</a>
-                        <a href="#">Menu</a>
-                        <a href="#">Menu</a>
-                        <a href="#">Menu</a>
+                        <a href="#">{t('home')}</a>
+                        <a href="#">{t('home')}</a>
+                        <a href="#">{t('home')}</a>
+                        <a href="#">{t('home')}</a>
                     </nav>
                     <section className="user">
                         <img src="#" alt="avatar"/>
                         <nav className="user-menu">
-                            <a href="#">Menu</a>
-                            <a href="#">Menu</a>
-                            <a href="#">Menu</a>
-                            <a href="#">Menu</a>
+                            <a href="#">{t('home')}</a>
+                            <a href="#">{t('home')}</a>
+                            <a href="#">{t('home')}</a>
+                            <a href="#">{t('home')}</a>
                         </nav>
                     </section>
                 </section>
