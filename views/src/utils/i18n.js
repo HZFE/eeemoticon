@@ -17,5 +17,5 @@ export function setLang (l) {
     ReactDOM.render(<App />, document.getElementById('root'));
 }
 export default function t (name) {
-    return i18n[name][lang];
+    return i18n[name] ? i18n[name][lang] : name;
 }

@@ -1,5 +1,11 @@
 import React, { PureComponent } from 'react';
 import t from '../utils/i18n';
+import {
+    BrowserRouter as Router,
+    Route,
+    Link,
+    Switch
+} from 'react-router-dom';
 
 export default class Header extends PureComponent {
     constructor (props) {
@@ -13,10 +19,8 @@ export default class Header extends PureComponent {
                 <section className="main-menu">
                     <input type="text" placeholder="Search..."/>
                     <nav>
-                        <a href="#">{t('home')}</a>
-                        <a href="#">{t('home')}</a>
-                        <a href="#">{t('home')}</a>
-                        <a href="#">{t('home')}</a>
+                        <Link to="/">{t('home')}</Link>
+                        <Link to="/search">{t('search')}</Link>
                     </nav>
                     <section className="user">
                         <img src="#" alt="avatar"/>
