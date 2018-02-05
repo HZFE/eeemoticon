@@ -19,13 +19,15 @@ export default class Header extends PureComponent {
                     <h1>EEEmoticon</h1>
                 </section>
                 <section className="main-menu">
-                    <input type="text" placeholder="Search..."/>
-                    <nav>
+                    {/* <nav>
                         <Link to="/">{t('home')}</Link>
                         <Link to="/search">{t('search')}</Link>
-                    </nav>
+                    </nav> */}
                     <section className="user">
-                        <img src={require('../img/avatar.jpg')} alt="avatar"/>
+                        <div className="wrap">
+                            <input type="text" placeholder="Search..."/>
+                            <img src={require('../img/avatar.jpg')} alt="avatar"/>
+                        </div>
                         <nav className="user-menu">
                             <a href="#">{t('home')}</a>
                             <a href="#">{t('home')}</a>
